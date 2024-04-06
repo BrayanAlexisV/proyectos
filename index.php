@@ -49,13 +49,9 @@
 						<td><?php echo $row['descripcion']; ?></td>
 						
 						<td>
-						<a href="#edit_<?php echo $row['id']; ?>" class="btn btn-success btn-sm" data-toggle="modal"> Editar</a>
-
-							<a href="#delete_<?php echo $row['id']; ?>" class="btn btn-danger btn-sm" data-toggle="modal">Borrar</a>
+					
 						</td>
-						<?php include('EditarModal.php'); ?>
-
-						<?php include('BorrarModal.php'); ?>
+						
 					</tr>
 					<?php 
 				}
