@@ -11,7 +11,6 @@
 	<h1 class="page-header text-center">Productos</h1>
 	<div class="row">
 		<div class="col-sm-8 col-sm-offset-2">
-			<a href="#addnew" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-plus"></span> Nuevo Producto</a>
 <?php 
 	session_start();
 	if(isset($_SESSION['message'])){
@@ -53,7 +52,7 @@
 
 							<a href="#delete_<?php echo $row['id']; ?>" class="btn btn-danger btn-sm" data-toggle="modal">Borrar</a>
 						</td>
-						<?php include('EditarModal.php'); ?>
+
 
 						<?php include('BorrarModal.php'); ?>
 					</tr>
@@ -73,7 +72,6 @@
 		</div>
 	</div>
 </div>
-<?php include('AgregarModal.php'); ?>
 <script src="js/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
